@@ -5,7 +5,7 @@ const DAY = 24 * HOUR;
 const WEEK = 7 * DAY;
 const MONTH = 30 * DAY;
 
-const TIME_MS = {
+export const TIME_MS = {
   second: SECOND,
   minute: MINUTE,
   hour: HOUR,
@@ -14,13 +14,6 @@ const TIME_MS = {
   month: MONTH,
 };
 
-const DEFAULT_DB_NAME = 'enslit-cloud';
-const DEFAULT_DB_PORT = '27017';
-const DEFAULT_DB_HOST = 'localhost';
-
-module.exports = {
-  TIME_MS,
-  DEFAULT_DB_NAME,
-  DEFAULT_DB_PORT,
-  DEFAULT_DB_HOST,
-};
+export const DEFAULT_DB_NAME = 'default-db-name';
+export const DEFAULT_DB_PORT = '27017';
+export const DEFAULT_DB_HOST = 'localhost';

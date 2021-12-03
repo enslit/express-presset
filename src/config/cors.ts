@@ -1,6 +1,6 @@
-const cors = require('cors');
+import cors from 'cors';
 
-module.exports.corsConfig = cors({
+export const corsConfig = cors({
   origin: [/http:\/\/localhost(:\d+)?/, /https?:\/\/([a-zA-Z]+\.)?enslit.ru/],
   credentials: true,
 });
